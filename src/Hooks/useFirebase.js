@@ -1,5 +1,5 @@
 import intializationFirebase from "../Firebase/initializationFirebas"
-import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged,signOut} from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged,signOut,createUserWithEmailAndPassword,signInWithEmailAndPassword  } from "firebase/auth";
 import { useEffect, useState } from "react";
 
 intializationFirebase();
@@ -11,7 +11,6 @@ const useFirebase=()=>{
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
         .then(res=>{
-            console.log(res.user);
             setUser(res.user);
         }).catch(err=>{
             setError(err.message);
@@ -33,11 +32,32 @@ const useFirebase=()=>{
     signOut(auth).then(() => {
       setUser("")
     }).catch((error) => {
-      // An error happened.
+      setError('')
     });
    }
+
+  const handleRegistration =(email,password)=>{
+    createUserWithEmailAndPassword(auth, email,password)
+    .then((res) => {
+      setUser(res.user);
+    })
+    .catch((error) => {
+      
+    });
+  }
+
+  const handleSignInUSer=(email,password)=>{
+      console.log(email);
+    signInWithEmailAndPassword(auth, email, password)
+    .then((res) => {
+      setUser(res.user)
+    })
+    .catch((error) => {
+     
+    });
+  }
 return{
-    user,handleGoogle,handleLogout
+    user,handleGoogle,handleLogout,error,handleRegistration,handleSignInUSer
 }
 
 }

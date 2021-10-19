@@ -12,6 +12,9 @@ import Trainers from './Components/Trainers/Trainers';
 import Footer from './Components/Footer/Footer';
 import Classes from './Components/Classes/Classes';
 import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import NotFound from './Components/NotFound/NotFound';
+import Register from './Components/Contact/Register';
 
 function App() {
   return (
@@ -35,14 +38,17 @@ function App() {
           <Route path="/contact">
             <Contact></Contact>
           </Route>
+          <Route path="/register">
+            <Register></Register>
+          </Route>
           <Route path="/trainers">
             <Trainers></Trainers>
           </Route>
-          <Route path="/classes">
+          <PrivateRoute path="/classes">
             <Classes></Classes>
-          </Route>
+          </PrivateRoute>
           <Route path="*">
-            <Contact></Contact>
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>
