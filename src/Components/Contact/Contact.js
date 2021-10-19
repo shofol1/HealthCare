@@ -11,6 +11,7 @@ const Contact = () => {
     const{user,handleSignInUSer,handleGoogle}=useFirebase();
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
+    const [err,seterr]=useState('');
     const history=useHistory();
     const location=useLocation();
     const redirect_url=location.state?.from||'/home'
@@ -18,7 +19,14 @@ const Contact = () => {
         setEmail(e.target.value);
     }
     const handlePassword=(e)=>{
-        setPassword(e.target.value);
+        
+        if(e.target.value>=6){
+            setPassword(e.target.value);
+            seterr('');
+        }
+        else{
+            seterr("Password length at least 6")
+        }
     }
 
 
@@ -43,7 +51,7 @@ const Contact = () => {
     }
     return(
         <div>
-            <div className="container" style={{height:"100vh"}}>
+            <div className="container mb-5" style={{height:"100vh",overflow:"none"}}>
             <div className="bg-dark text-white p-5 text-center">
                     <h1>Login</h1>
                 </div>
@@ -60,6 +68,7 @@ const Contact = () => {
                         <Form.Control onChange={handlePassword} type="password" placeholder="Password" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                        <p className="text-danger fw-bold bg-dark p-2">{err}</p>
                         </Form.Group>
                         <button className="btn btn-secondary" onClick={handleLoginUser}>Login</button>
                         </Form>

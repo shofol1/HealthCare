@@ -8,6 +8,7 @@ import "./Header.css"
 const Header = () => {
     const {user,handleLogout}=useFirebase();
     console.log(user);
+    console.log(user);
     return (
         <div>
             <div className="container mb-2" >

@@ -11,8 +11,8 @@ const Services = () => {
     },[])
     return (
         <div>
-           <div className="container">
-           <Row xs={1} md={3} className="g-4">
+           <div className="container" id="services">
+           <Row xs={1} md={3} className="g-4" >
             {
                 data.map(sData=><div key={sData._id} className="pt-5">
                     <Col >
