@@ -23,7 +23,7 @@ const Header = () => {
                     <Nav.Link as={Link} to="/plans">Plans</Nav.Link>
                    {
                        !user.email?
-                    <div className="d-flex">
+                    <div className="d-flex ms-auto">
                         <Nav.Link as={Link} to="/contact" className="btn btn-danger text-white p-2 me-3" style={{borderRadius:"5px"}}>Login</Nav.Link>
                     <Nav.Link as={Link} to="/register" className="btn btn-danger text-white p-2 me-2" style={{borderRadius:"5px"}}>Sign Up</Nav.Link>
                     </div>:
