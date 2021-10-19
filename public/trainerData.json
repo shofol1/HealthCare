@@ -1,0 +1,23 @@
+[
+    {
+      "_id": "616e4df07f4dd8ccf7f9005c",
+      "Name": "Samantha Gains",
+      "position": "Trainer",
+      "phone": "+1 (958) 532-2570",
+      "photos":"/Trainers/gym_coach_1-150x150.jpg"
+    },
+    {
+      "_id": "616e4df07f4dd8ccf7f9005c",
+      "Name": "Anna Strong",
+      "position": "Trainer",
+      "phone": "+1 (958) 532-2456",
+      "photos":"/Trainers/gym_coach_2-150x150.jpg"
+    },
+    {
+      "_id": "616e4df07f4dd8ccf7f9005c",
+      "Name": "Ben Smith    ",
+      "position": " LEADING Trainer",
+      "phone": "+1 (958) 532-2456",
+      "photos":"/Trainers/gym_coach_3-150x150.jpg"
+    }
+  ]

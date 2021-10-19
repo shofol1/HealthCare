@@ -1,0 +1,45 @@
+[
+  {
+    "_id": "616d5f6f9fbefe86cc30b653",
+    "price": "$46.09",
+    "ttbasetitle": "STRENGTH",
+    "des": "Weightlifting",
+    "photo":"Services/gym_services_image3.jpg"
+  },
+  {
+    "_id": "616d5f6ff41c7193fa089d62",
+    "price": "$56.99",
+    "ttbasetitle": "Cardio",
+    "des": "Indoor Cycling",
+    "photo":"Services/gym_services_image1.jpg"
+  },
+  {
+    "_id": "616d5f6fb3a7270024f8b636",
+    "price": "$42.14",
+    "ttbasetitle": "Strength",
+    "des": "Kettlebell Power",
+    "photo":"Services/gym_services_image5.jpg"
+    
+  },
+  {
+    "_id": "616d5f6f3cfd25f719261c48",
+    "price": "$95.51",
+    "ttbasetitle": "Functional",
+    "des": "Core Power",
+    "photo":"Services/gym_services_image4.jpg"
+  },
+  {
+    "_id": "616d5f6faddc22f7f3ae9059",
+    "price": "$49.93",
+    "ttbasetitle": "Functional",
+    "des": "Mobility Circle",
+    "photo":"Services/gym_services_image6.jpg"
+  },
+  {
+    "_id": "616d5f6fc7bd8cfe6e61141d",
+    "price": "$74.16",
+    "ttbasetitle": "Cardio",
+    "des": "Body Works",
+    "photo":"Services/gym_services_image2.jpg"
+  }
+]
