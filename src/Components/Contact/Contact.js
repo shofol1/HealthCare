@@ -4,6 +4,8 @@ import useFirebase from '../../Hooks/useFirebase';
 import { useState } from "react";
 import { useHistory, useLocation } from 'react-router';
 import image from './login.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGoogle} from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
     const{user,handleSignInUSer,handleGoogle}=useFirebase();
@@ -34,7 +36,7 @@ const Contact = () => {
     const handleGoogleSignIn=()=>{
         handleGoogle()
         .then(res=>{
-           
+            history.push(redirect_url)
         }).catch(err=>{
            
         })
@@ -44,7 +46,6 @@ const Contact = () => {
             <div className="container" style={{height:"100vh"}}>
             <div className="bg-dark text-white p-5 text-center">
                     <h1>Login</h1>
-                    <h1>{user?.displayName}</h1>
                 </div>
             <Row className="mx-auto pt-5">
                 <Col md={6}>
@@ -63,7 +64,7 @@ const Contact = () => {
                         <button className="btn btn-secondary" onClick={handleLoginUser}>Login</button>
                         </Form>
                         <div className="pt-3">
-                            <p>login with</p><button className="btn btn-danger" onClick={handleGoogleSignIn}>Google</button>
+                            <p>login with</p><button className="btn btn-danger" onClick={handleGoogleSignIn}> <span><FontAwesomeIcon icon={faGoogle} color="white"/> </span> Google</button>
                         </div>
                 </Col>
                 <Col md={6}>

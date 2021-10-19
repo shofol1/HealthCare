@@ -13,6 +13,7 @@ const Service = () => {
     },[])
 
     useEffect(()=>{
+        console.log(data);
        const foundService= 
        data.find(fdata=>fdata._id===id)
        setSingleService(foundService);
@@ -23,7 +24,6 @@ const Service = () => {
             <div className="bg-dark text-white p-5 text-center">
                     <h1>Service</h1>
                 </div>
-                <Card.Img variant="top" s />
                 <Table striped bordered hover variant="dark" className="mt-3">
                 <thead>
                 <tr>
