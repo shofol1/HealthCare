@@ -1,0 +1,35 @@
+[
+    {
+      "_id": "1",
+      "price": "$40",
+      "plan": "BEGINNER PLAN",
+      "for": "FOR ROOKIES",
+      "access":"Unlimited access to the gym",
+      "des":"3 classes per week",
+      "time":"One Year memberships",
+      "facility":"FREE drinking package",
+      "person":"1"
+    },
+    {
+        "_id": "2",
+        "price": "$60",
+        "plan": "PREMIUM PLAN",
+        "for": "FOR FITNESS LOVERS",
+        "access":"Unlimited access to the gym",
+        "des":"5 classes per week",
+        "time":"One Year memberships",
+        "facility":"FREE drinking package",
+        "person":"2"
+      },
+      {
+        "_id": "3",
+        "price": "$80",
+        "plan": "ULTIMATE  PLAN",
+        "for": "FOR THE ADDICTED",
+        "access":"Unlimited access to the gym",
+        "des":"7 classes per week",
+        "time":"One Year memberships",
+        "facility":"FREE drinking package",
+        "person":"7"
+      }
+  ]

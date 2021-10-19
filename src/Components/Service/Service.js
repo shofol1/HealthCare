@@ -5,7 +5,7 @@ import { useParams } from 'react-router';
 const Service = () => {
     const{id}=useParams();
     const [data,setData]=useState([]);
-    const[sigleService,setSingleService]=useState({});
+    const[sigleService,setSingleService]=useState([]);
     useEffect(()=>{
         fetch('/servicesData.json')
         .then(res=>res.json())
@@ -17,14 +17,13 @@ const Service = () => {
        data.find(fdata=>fdata._id===id)
        setSingleService(foundService);
     },[data])
-    console.log(sigleService?.photo);
     return (
         <div>
             <div className="container" style={{height:"100vh"}}>
             <div className="bg-dark text-white p-5 text-center">
                     <h1>Service</h1>
                 </div>
-                <Card.Img variant="top" src={sigleService?.photo} />
+                <Card.Img variant="top" s />
                 <Table striped bordered hover variant="dark" className="mt-3">
                 <thead>
                 <tr>

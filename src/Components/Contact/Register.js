@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 
 const Register = () => {
@@ -31,23 +32,20 @@ const Register = () => {
                 </div>
             <Form className="w-75 mx-auto top-2 mt-5" onSubmit={handleUserLogin}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label className="text-white">Email address</Form.Label>
                     <Form.Control onChange={handleEmailChange} type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                    </Form.Text>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label className="text-white">Password</Form.Label>
                     <Form.Control onChange={handlePasswordChange} type="password" placeholder="Password" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Already Have an Account?" />
                     </Form.Group>
                     <button className="btn btn-secondary" type="submit">
                         Register
                     </button>
+                    <Link to="/contact" className="text-white fw-bold ms-2 bg-dark p-2">Already have an account?</Link>
                     </Form>
             </div>
         </div>

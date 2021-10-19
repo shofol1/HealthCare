@@ -12,8 +12,9 @@ const FooterNav = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto text-end">
                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                <Nav.Link as={Link} to="/trainer">Our Trainer</Nav.Link>
-                <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                    <Nav.Link as={Link} to="/trainers">Our Trainers</Nav.Link>
+                    <Nav.Link as={Link} to="/Classes">Classes</Nav.Link>
+                    <Nav.Link as={Link} to="/plans">Plans</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
   </Container>
