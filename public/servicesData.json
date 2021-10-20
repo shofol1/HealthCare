@@ -4,7 +4,7 @@
     "price": "$46.09",
     "ttbasetitle": "STRENGTH",
     "des": "Weightlifting",
-    "photo":"Services/gym_services_image3.jpg",
+    "photo":"https://i.ibb.co/TrN35wj/gym-services-image3.jpg",
     "time":"morning"
   },
   {
@@ -12,7 +12,7 @@
     "price": "$56.99",
     "ttbasetitle": "Cardio",
     "des": "Indoor Cycling",
-    "photo":"Services/gym_services_image1.jpg",
+    "photo":"https://i.ibb.co/mSjdYC2/gym-services-image1.jpg",
     "time":"morning"
   },
   {
@@ -20,7 +20,7 @@
     "price": "$42.14",
     "ttbasetitle": "Strength",
     "des": "Kettlebell Power",
-    "photo":"Services/gym_services_image5.jpg",
+    "photo":"https://i.ibb.co/64XRK90/gym-services-image5.jpg",
     "time":"evening"
     
   },
@@ -29,7 +29,7 @@
     "price": "$95.51",
     "ttbasetitle": "Functional",
     "des": "Core Power",
-    "photo":"Services/gym_services_image4.jpg",
+    "photo":"https://i.ibb.co/NVZzmhB/gym-services-image4.jpg",
     "time":"night"
   },
   {
@@ -37,14 +37,14 @@
     "price": "$49.93",
     "ttbasetitle": "Functional",
     "des": "Mobility Circle",
-    "photo":"Services/gym_services_image6.jpg"
+    "photo":"https://i.ibb.co/TKYRZNx/gym-services-image6.jpg"
   },
   {
     "_id": "616d5f6fc7bd8cfe6e61141d",
     "price": "$74.16",
     "ttbasetitle": "Cardio",
     "des": "Body Works",
-    "photo":"Services/gym_services_image2.jpg",
+    "photo":"https://i.ibb.co/qFKPvBB/gym-services-image2.jpg",
     "time":"evening"
   }
 ]

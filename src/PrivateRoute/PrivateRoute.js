@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect,
-    useHistory,
-    useLocation
-  } from "react-router-dom";
-import useAuth from '../Hooks/useAuth';
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+  useHistory,
+  useLocation,
+} from "react-router-dom";
+import useAuth from "../Hooks/useAuth";
 
-const PrivateRoute = ({children,...rest}) => {
-    const {user}=useAuth();
-    return (
-        <Route
+const PrivateRoute = ({ children, ...rest }) => {
+  const { user } = useAuth();
+  return (
+    <Route
       {...rest}
       render={({ location }) =>
         user.email ? (
@@ -22,13 +22,13 @@ const PrivateRoute = ({children,...rest}) => {
           <Redirect
             to={{
               pathname: "/contact",
-              state: { from: location }
+              state: { from: location },
             }}
           />
         )
       }
     />
-    );
+  );
 };
 
 export default PrivateRoute;
