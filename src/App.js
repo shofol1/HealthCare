@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Header from "./Components/Header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Contact from "./Components/Contact/Contact";
+import Login from "./Components/Login/Login";
 import Trainers from "./Components/Trainers/Trainers";
 import Footer from "./Components/Footer/Footer";
 import Classes from "./Components/Classes/Classes";
 import AuthProvider from "./Context/AuthProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import NotFound from "./Components/NotFound/NotFound";
-import Register from "./Components/Contact/Register";
+import Register from "./Components/Login/Register";
 import Plans from "./Plans/Plans";
 import Service from "./Components/Service/Service";
 
@@ -30,8 +30,8 @@ function App() {
             <PrivateRoute exact path="/services/:id">
               <Service></Service>
             </PrivateRoute>
-            <Route exact path="/contact">
-              <Contact></Contact>
+            <Route exact path="/login">
+              <Login></Login>
             </Route>
             <Route exact path="/register">
               <Register></Register>

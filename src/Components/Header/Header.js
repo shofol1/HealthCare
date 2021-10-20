@@ -36,7 +36,7 @@ const Header = () => {
                   <div className="d-flex ms-auto">
                     <Nav.Link
                       as={Link}
-                      to="/contact"
+                      to="/login"
                       className="btn btn-danger text-white p-2 me-3"
                       style={{ borderRadius: "5px" }}
                     >
@@ -52,8 +52,16 @@ const Header = () => {
                     </Nav.Link>
                   </div>
                 ) : (
-                  <div className="d-flex align-items-center">
-                    <h6 className="text-white p-1 mt-1">{user?.displayName}</h6>
+                  <div className="d-flex align-items-center ms-auto">
+                    <div>
+                      {user.displayName ? (
+                        <h6 className="text-white p-1 mt-1">
+                          {user?.displayName}
+                        </h6>
+                      ) : (
+                        <h6 className="text-white p-1 mt-1">{user?.email}</h6>
+                      )}
+                    </div>
                     <button className="btn btn-danger" onClick={handleLogout}>
                       Log Out{" "}
                     </button>
